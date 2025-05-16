@@ -50,8 +50,8 @@ This project requires the following dependencies:
 
 ### Installation
 
-To get started with Inventory Tracker, follow these steps:
+Build InventoryTracker from the source and install dependencies:
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-repo/inventory-tracker.git
+   git clone https://github.com/urbojiano/InventoryTracker
