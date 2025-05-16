@@ -18,6 +18,7 @@ Built with the tools and technologies:
 ## Table of Contents
 
 - [Overview](#overview)
+- [Why Inventory Tracker?](#why-inventory-tracker)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -26,7 +27,17 @@ Built with the tools and technologies:
 
 ## Overview
 
-Inventory Tracker is designed to help you manage your inventory efficiently and empower your business growth. With a user-friendly interface and powerful features, you can easily keep track of your stock levels, orders, and sales.
+**InventoryTracker** is a powerful web application designed to streamline inventory management while ensuring secure user interactions.
+
+## Why Inventory Tracker?
+
+This project simplifies the complexities of inventory management, providing developers with a robust tool to enhance operational efficiency. The core features include:
+
+- **User Authentication:** Secure login and registration processes with validation and reCAPTCHA.
+- **Inventory Management:** Comprehensive interface for adding, updating, and deleting inventory items.
+- **Reporting Capabilities:** Generate detailed inventory reports with visual data representation.
+- **Dashboard Overview:** Centralized dashboard displaying key metrics and trends.
+- **Seamless Deployment:** Configured for easy deployment on Vercel, ensuring a smooth setup process.
 
 ## Getting Started
 
