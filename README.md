@@ -43,11 +43,10 @@ This project simplifies the complexities of inventory management, providing deve
 
 ### Prerequisites
 
-Before you begin, ensure you have met the following requirements:
+This project requires the following dependencies:
 
-- Python 3.8 or higher installed
-- pip package manager
-- Git (optional, for cloning the repository)
+- **Programming Language:** HTML
+- **Package Manager:** Uv, Pip
 
 ### Installation
 
