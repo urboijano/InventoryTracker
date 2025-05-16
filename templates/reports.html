@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block title %}Reports - Inventory Management System{% endblock %}
+
+{% block header %}Inventory Reports{% endblock %}
+
+{% block content %}
+<div class="row mt-4">
+    <!-- Report Selection -->
+    <div class="col-12 mb-4">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="fas fa-chart-bar me-2"></i>Select Report</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card report-card" data-report="inventory_value">
+                            <div class="card-body text-center">
+                                <i class="fas fa-dollar-sign fa-3x mb-3 text-primary"></i>
+                                <h5 class="card-title">Inventory Value</h5>
+                                <p class="card-text text-muted">View inventory value by category</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card report-card" data-report="stock_levels">
+                            <div class="card-body text-center">
+                                <i class="fas fa-boxes fa-3x mb-3 text-primary"></i>
+                                <h5 class="card-title">Stock Levels</h5>
+                                <p class="card-text text-muted">View current stock levels</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card report-card" data-report="transaction_history">
+                            <div class="card-body text-center">
+                                <i class="fas fa-exchange-alt fa-3x mb-3 text-primary"></i>
+                                <h5 class="card-title">Transaction History</h5>
+                                <p class="card-text text-muted">View transaction types summary</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Report Display -->
+    <div class="col-12 mb-4" id="report-container" style="display: none;">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0" id="report-title">Report</h5>
+            </div>
+            <div class="card-body">
+                <div class="chart-container" style="height: 400px;">
+                    <canvas id="reportChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Featured Image -->
+<div class="row mt-4 mb-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="text-center mb-3">Data-Driven Inventory Decisions</h5>
+                <div class="text-center">
+                    <img src="https://pixabay.com/get/gaa72b2a1633366b2bf6052c41015f9a7f4a8d2ba8e46c64ef899cc4a4010aa2b63ff40a59590f468c6960471155bd0a89a3070a16bd6b6676c923819a3858913_1280.jpg"
+                         alt="Inventory Management"
+                         class="img-fluid rounded"
+                         style="max-height: 400px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/reports.js') }}"></script>
+{% endblock %}
